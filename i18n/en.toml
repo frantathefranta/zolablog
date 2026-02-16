@@ -1,0 +1,12 @@
+# Used by sites based on the theme
+# (not necessarily needed in all languages)
+about = "About"
+documentation = "Documentation"
+example = "Example"
+home = "Home"
+movies = "Movies"
+movies_directors = "Directors"
+posts = "Posts"
+sitemap = "Sitemap"
+tags = "Tags"
+yorgos_lanthimos = "Yorgos Lanthimos"

@@ -1,0 +1,64 @@
+# The URL the site will be built for
+base_url = "https://zola-daisy.winterstein.biz"
+
+theme = "daisy"
+
+title = "Daisy Theme"
+description = "Example / demo page for the Daisy theme for Zola."
+
+compile_sass = false
+minify_html = true
+build_search_index = true
+
+default_language = "en"
+
+# Whether to generate RSS feeds for the website pages
+generate_feeds = true
+
+taxonomies = [
+    { name = "tags", paginate_by = 2, feed = true },
+]
+
+[search]
+index_format = "elasticlunr_json"
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+
+[extra]
+# Put all your custom variables here
+enable_theme_switching = false
+daisyui_theme_light = "lemonade"
+daisyui_theme_dark= "coffee"
+
+[extra.footer]
+links = [
+    { url = "about", i18n_key = "about" },
+    { url = "sitemap.xml", i18n_key = "sitemap", no_translation = true },
+]
+
+notice = '<a href="https://www.franta.us">Franta Bartik</a><br>Powered by <a href="https://getzola.org">Zola</a>, <a href="https://tailwindcss.com">TailwindCSS</a> & <a href="https://daisyui.com">DaisyUI</a>'
+
+[extra.navbar]
+links = [
+    { url = "blog", i18n_key = "posts" },
+    { url = "tags", i18n_key = "tags" },
+]
+
+[extra.social]
+# codeberg = "https://franta"
+github = "https://github.com/frantathefranta"
+gitlab = ""
+stackoverflow = ""
+mastodon = ""
+linkedin = ""
+instagram = ""
+youtube = ""
+signal = ""
+telegram = ""
+email = ""
+phone = ""
+
+[extra.favicon]
+svg = "favicon.svg"

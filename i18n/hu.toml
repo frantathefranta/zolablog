@@ -1,0 +1,12 @@
+# Used by sites based on the theme
+# (not necessarily needed in all languages)
+about = "Névjegy"
+documentation = "Dokumentáció"
+example = "Példa"
+home = "Kezdőlap"
+movies = "Filmek"
+movies_directors = "Filmrendezők"
+posts = "Bejegyzések"
+sitemap = "Oldaltérkép"
+tags = "Címkék"
+yorgos_lanthimos = "Jórgosz Lánthimosz"
