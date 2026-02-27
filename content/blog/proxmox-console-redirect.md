@@ -4,6 +4,8 @@ authors = ["Franta Bartik"]
 description = "How-to for setting up console access on Proxmox"
 date = 2024-03-27
 draft = false
+[extra]
+toc = true
 
 [taxonomies]
 tags=['Documentation', 'Proxmox' ]
@@ -42,7 +44,7 @@ You can see that the system is using the `\EFI\systemd\systemd-bootx64.efi` file
 
 <!--listend-->
 
-```systemd-boot
+```
 root=ZFS=rpool/ROOT/pve-1 boot=zfs console=ttyS0,115200n8
 ```
 

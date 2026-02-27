@@ -1,18 +1,14 @@
 +++
-title = "Zola Theme - Daisy"
+title = "Franta's blog"
 +++
 
-A beautiful and fast [Zola](https://www.getzola.org/) theme build on [TailwindCSS](https://tailwindcss.com) and [DaisyUI](https://daisyui.com) with 37 different color schemes included. Use the color scheme switcher in the navbar above, to check out the available colors.
+### Who am I?
+My name is Frantisek Bartik and most people call me Franta. I'm originally from the Czech Republic and now live in Columbus, OH.
 
-Some of the main features of this theme are:
+### About this blog
 
-* Responsive design (looks good on desktop and mobile)
-* Automatically selected dark / light modes
-* 37 color schemes included
-* Customizable navbar and footer (e.g., with social links)
-* Can be used with any Zola taxonomies (e.g., tags, categories)
-* Search functionality
-* Multi-language support
-* Pagination
-* Customizable favicon
-* Error 404 page
+This blog is currently hosted on a Talos K8s cluster at my house.
+
+It's using zola with the radion theme.
+
+

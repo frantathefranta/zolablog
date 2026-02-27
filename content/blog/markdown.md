@@ -2,14 +2,17 @@
 title = "Markdown"
 description = "Overview on the supported markdown, also showing how it is rendered by the theme."
 date = "2025-03-30"
-authors = ["Adrian Winterstein"]
+draft = true
+[extra]
+toc = true
 
-[taxonomies]
-tags=['Documentation']
+#[taxonomies]
+#tags=['Documentation']
 +++
 
 The following is supported to be used in the markdown files of any website using the Daisy theme.
 
+<!-- more -->
 ## Headings
 
 All six HTML heading types `<h1>` to `<h6>` are supported:

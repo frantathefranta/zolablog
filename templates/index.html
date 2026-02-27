@@ -1,0 +1,17 @@
+{% extends "_base.html" %}
+
+{% block main %}
+  {% if config.extra.radion_title %}
+  <header><h1>About me</h1></header>
+  {% endif %}
+  {% if section.content %}
+  <article class="post-content">
+    {{ section.content | safe }}
+  </article>
+  {% endif %}
+  <header><h1>Posts</h1></header>
+  {% set blog = get_section(path="blog/_index.md") %}
+  {% for page in blog.pages %}
+    {{ post_macros::page_in_list(page=page) }}
+  {% endfor %}
+{% endblock main %}

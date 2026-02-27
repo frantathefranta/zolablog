@@ -1,64 +1,63 @@
 # The URL the site will be built for
-base_url = "https://zola-daisy.winterstein.biz"
+base_url = "https://franta.us"
 
-theme = "daisy"
+theme = "radion"
 
-title = "Daisy Theme"
-description = "Example / demo page for the Daisy theme for Zola."
+title = "franta.us"
+description = "Franta's blog"
 
 compile_sass = false
 minify_html = true
 build_search_index = true
 
 default_language = "en"
+generate_sitemap = true
+generate_robots_txt = true
 
 # Whether to generate RSS feeds for the website pages
 generate_feeds = true
 
 taxonomies = [
-    { name = "tags", paginate_by = 2, feed = true },
+    { name = "categories", feed = true },
+    { name = "tags", feed = true },
 ]
 
 [search]
 index_format = "elasticlunr_json"
 
 [markdown]
-highlight_code = true
-highlight_theme = "css"
+bottom_footnotes = true
+external_links_target_blank = true
+external_links_external = true
+external_links_no_referrer = true
+lazy_async_image = true
+github_alerts = true
+insert_anchor_links = "heading"
+
+[markdown.highlighting]
+style = "class"
+# Theme gallery: https://textmate-grammars-themes.netlify.app/
+dark_theme = "material-theme-palenight"
+light_theme = "everforest-light"
+error_on_missing_language = true
 
 [extra]
 # Put all your custom variables here
+theme = "toggle"
+comments = false
+radion_title = "franta.us"
+radion_menu = [
+    { url = "$BASE_URL", name = "~home" },
+    { url = "$BASE_URL/tags", name = "#tags" },
+    { url = "$BASE_URL/dn42", name = "DN42" },
+]
+revision_history = true
 enable_theme_switching = false
-daisyui_theme_light = "lemonade"
-daisyui_theme_dark= "coffee"
-
-[extra.footer]
-links = [
-    { url = "about", i18n_key = "about" },
-    { url = "sitemap.xml", i18n_key = "sitemap", no_translation = true },
-]
-
-notice = '<a href="https://www.franta.us">Franta Bartik</a><br>Powered by <a href="https://getzola.org">Zola</a>, <a href="https://tailwindcss.com">TailwindCSS</a> & <a href="https://daisyui.com">DaisyUI</a>'
-
-[extra.navbar]
-links = [
-    { url = "blog", i18n_key = "posts" },
-    { url = "tags", i18n_key = "tags" },
-]
-
-[extra.social]
-# codeberg = "https://franta"
+author = "Franta Bartik"
 github = "https://github.com/frantathefranta"
-gitlab = ""
-stackoverflow = ""
-mastodon = ""
-linkedin = ""
-instagram = ""
-youtube = ""
-signal = ""
-telegram = ""
-email = ""
-phone = ""
+blog_github_repo_url = "https://github.com/frantathefranta/zolablog"
+codeblock = true
+enable_search = true
 
 [extra.favicon]
 svg = "favicon.svg"

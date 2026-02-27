@@ -20,7 +20,7 @@ I'm sure a better and more efficient way to boot Talos over network works with `
 1.  Install `os-tftp` package. Start TFTP server and bind it to an IP. In the WebGUI, it's in **Services &gt; TFTP.**
 2.  SSH into OPNSense and create directory `/usr/local/tftp` (will need sudo privileges).
 3.  Create directory `pxelinux.cfg` and a file `pxelinux.cfg/default.`
-    ```pxe
+    ```
     DEFAULT vesamenu.c32
     PROMPT 0
     MENU TITLE PXE Boot Menu (Main)
@@ -32,7 +32,7 @@ I'm sure a better and more efficient way to boot Talos over network works with `
     ```
 4.  Create file `pxelinux.cfg/linux`.
     (NOTE: I wanted to boot Talos Linux, so I put the `.iso` in the `/usr/local/tftp` directory.)
-    ```pxe
+    ```
     MENU TITLE PXE Boot Menu (Linux)
 
     LABEL main-menu
