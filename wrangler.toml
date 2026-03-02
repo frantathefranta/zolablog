@@ -1,5 +1,6 @@
 name = "zolablog"
 compatibility_date = "2026-01-22"
+workers_dev = false # Disables the *.workers.dev domains
 
 [build]
 command = "./build.sh"
