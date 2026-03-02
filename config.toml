@@ -46,6 +46,7 @@ error_on_missing_language = true
 theme = "toggle"
 comments = false
 radion_title = "franta.us"
+google_site_verification = "Ow7XC7qu8luKBJA1n2w8NwNw3V_-MSMGhiAPfWwKqzg"
 radion_menu = [
     { url = "$BASE_URL", name = "~home" },
     { url = "$BASE_URL/tags", name = "#tags" },
