@@ -6,3 +6,7 @@ command = "./build.sh"
 
 [assets]
 directory = "./public"
+
+[[routes]]
+pattern = "franta.us"
+custom_domain = true
