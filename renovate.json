@@ -2,5 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>frantathefranta/renovate-config"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^build\\.sh$"],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-z-]+) depName=(?<depName>[^\\n]+)\\n\\s*\\w+=(?<currentValue>[^\\n]+)"
+      ]
+    }
   ]
 }
