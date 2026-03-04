@@ -5,11 +5,14 @@
 with pkgs;
 
 mkShell {
-  buildInputs = [
+  strictDeps = true;
+  nativeBuildInputs = [
     zola
+    taplo
+    yaml-language-server
   ];
 
   shellHook = ''
-    ${pkgs.git} submodule update --init --recursive
+    ${pkgs.git}/bin/git submodule update --init --recursive
   '';
 }
