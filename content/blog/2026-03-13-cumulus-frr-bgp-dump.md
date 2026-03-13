@@ -16,6 +16,30 @@ This outlines steps to use a Cumulus router for gathering a BGP table and then u
 
 ### Extracting an MRT file from FRR
 
+I initially used the `vtysh` method because I couldn't find how to do this using `NVUE` CLI. Turns out, there is a way to do it using [_"snippets"_](https://docs.nvidia.com/networking-ethernet-software/cumulus-linux-516/System-Configuration/NVIDIA-User-Experience-NVUE/NVUE-Snippets). 
+
+#### Correct method
+An example snippet that dumps the MRT looks like this:
+
+``` yaml
+- set:
+    system:
+      config:
+        snippet:
+          frr.conf: |
+            dump bgp routes-mrt /tmp/routes-mrt
+```
+
+You'll then use this in as a file in the CLI:
+
+``` sh
+nv config patch snippet.yaml
+nv config apply
+```
+
+
+#### (most likely) Incorrect method
+**USE THE METHOD ABOVE**
 This does require entering `configure` mode in **FRR**, but AFAIK it doesn't make any changes in routing behavior (nor should it).
 ``` sh
 fbartik@cumulus:mgmt:~$ sudo vtysh
