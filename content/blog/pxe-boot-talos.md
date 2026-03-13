@@ -6,7 +6,7 @@ date = 2024-04-22
 draft = false
 
 [taxonomies]
-tags=['Documentation', 'Talos' ]
+tags=['documentation', 'talos' ]
 +++
 
 This assumes you are using an OPNSense firewall/router.

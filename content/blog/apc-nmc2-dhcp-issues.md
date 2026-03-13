@@ -5,7 +5,7 @@ description = "<b>TL;DR:</b> Make sure the UPS's own firewall is not interfering
 author = "Franta Bartik"
 
 [taxonomies]
-tags=['Troubleshooting']
+tags=['troubleshooting', 'networking']
 +++
 **TL;DR:** <mark>Make sure the UPS's own firewall is not interfering.</mark>
 

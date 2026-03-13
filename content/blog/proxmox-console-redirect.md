@@ -8,7 +8,7 @@ draft = false
 toc = true
 
 [taxonomies]
-tags=['Documentation', 'Proxmox' ]
+tags=['documentation', 'proxmox' ]
 +++
 
 ## How to setup Proxmox to redirect console {#how-to-setup-proxmox-to-redirect-console}
