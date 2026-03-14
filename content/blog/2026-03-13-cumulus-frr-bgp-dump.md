@@ -30,7 +30,7 @@ An example snippet that dumps the MRT looks like this:
             dump bgp routes-mrt /tmp/routes-mrt
 ```
 
-You'll then use this in as a file in the CLI:
+You'll then use this as a file in the CLI:
 
 ``` sh
 nv config patch snippet.yaml
