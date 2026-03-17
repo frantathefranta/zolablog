@@ -6,7 +6,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^build\\.sh$"],
+      "managerFilePatterns": [
+        "/^build\\.sh$/"
+      ],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>[a-z-]+) depName=(?<depName>[^\\n]+)\\n\\s*\\w+=(?<currentValue>[^\\n]+)"
       ]
