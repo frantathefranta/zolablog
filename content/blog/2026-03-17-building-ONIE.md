@@ -53,11 +53,12 @@ useradd -m -G docker -s /bin/bash admin
 
 ### Setting up `due`
 
-I downloaded `due` from their repo because the `ubuntu/noble` version is too old and can&rsquo;t deal with filesystem patches.
+I first installed due from the Ubuntu repo to resolve dependencies (docker, etc...), then I downloaded the `.deb` from the **CumulusNetworks/DUE** repo because the `ubuntu/noble` version is too old and can't deal with filesystem patches.
 
 As `root`: 
 
 ``` sh
+apt update && apt install due
 wget https://github.com/CumulusNetworks/DUE/releases/download/v4.1.0/due_4.1.0-1_all.deb
 dpkg -i ./due_4.1.0-1_all.deb
 
@@ -99,9 +100,13 @@ Execute these commands either as `admin` or in the `due` container:
 git clone https://github.com/opencomputeproject/onie.git
 cd onie
 git checkout 2020.05br
+
+# The builder expects these gitconfig values
+git config --global user.email "<email>"
+git config --global user.name "<name>"
 ```
 
-You'll know if you need to change the branch if you run into this error:
+You'll know if you need to change the branch if you run into this error when building the image:
 ``` sh
 make: *** No rule to make target 'conf/crosstool/gcc-4.9.2/uClibc-ng-1.0.38/crosstool.x86_64.config', needed by '/home/build/src/onie/build/x-tools/x86_64-g4.9.2-lnx4.9.95-uClibc-ng-1.0.38/build/.config'. Stop.
 ```
