@@ -18,7 +18,7 @@ generate_robots_txt = true
 generate_feeds = true
 
 taxonomies = [
-    { name = "categories", feed = true },
+    # { name = "categories", feed = true },
     { name = "tags", feed = true },
 ]
 
