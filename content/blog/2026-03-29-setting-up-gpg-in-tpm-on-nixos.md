@@ -5,7 +5,7 @@ date = "2026-03-29"
 description = "Setting up a GPG key in TPM on NixOS"
 
 [taxonomies]
-tags=['nixos']
+tags=['nixos', 'documentation']
 +++
 
 ## Motivation
